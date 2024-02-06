@@ -17,6 +17,13 @@ Hardware interface to attach an Allegro Hand v4 to a UR5 arm.
 * Weight: **200g**
 * **Sand blasted** for a mat surface finish (to prevent unwanted reflection with our Motion Capture system)
 * Price (2024): <200€ from local machinist (Including sand blasting, VAT, shipping, ...). Machinist found from [usineur.fr](https://usineur.fr).
+* Computed inertial parameters (see [compute_inertia.py](compute_inertia.py))
+```python
+cog_pos = [0, -2.4e-04, 1.5e-02] # m
+inertia = [[ 1.0e-04 -1.2e-13  3.5e-13],
+           [-1.2e-13  1.0e-04 -4.0e-07],
+           [ 3.5e-13 -4.0e-07  1.2e-04]]
+```
 
 ## Assembly
 Requires:
